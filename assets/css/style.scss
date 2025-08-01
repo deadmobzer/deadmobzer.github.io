@@ -4,5 +4,6 @@
 // Override Minima variables BEFORE importing
 
 @import
-  "minima/skins/{{ site.minima.skin | default: 'dark' }}",
-  "minima/initialize";
+  "minima";
+@import
+  "custom-styles";

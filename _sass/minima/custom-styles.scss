@@ -1,8 +1,8 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 @font-face {
-    font-family: 'Mephisto';
-    src: url('assets\css\Mephistophjimenez.ttf');
+    font-family: 'Mephistophjimenez';
+    src: url('assets\Fonts\Mephistophjimenez.ttf') format('truetype');
     font-weight: normal;
     font-size: normal;
     font-display: swap;
@@ -24,7 +24,7 @@ a {
   }
 }
 header{
-    font-family: 'Mephisto', sans-serif;
+    font-family: 'Mephistophjimenez', sans-serif;
 }
 header, footer, .site-header, .site-footer {
   background-color: #111118;
