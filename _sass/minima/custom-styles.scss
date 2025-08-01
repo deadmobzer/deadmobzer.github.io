@@ -1,2 +1,77 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+@font-face {
+    font-family: 'Mephisto';
+    src: url('assets\css\Mephistophjimenez.ttf');
+    font-weight: normal;
+    font-size: normal;
+    font-display: swap;
+}
+
+body {
+  background-color: #111118;
+  color: #EBEDFF;
+}
+
+a {
+  color: #AAA9EF;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: lighten(#AAA9EF, 20%);
+    text-decoration: underline;
+  }
+}
+header{
+    font-family: 'Mephisto', sans-serif;
+}
+header, footer, .site-header, .site-footer {
+  background-color: #111118;
+  border-color: #222233;
+  color: #EBEDFF;
+}
+
+.nav-links a {
+  color: #AAA9EF;
+}
+
+// Titles (like site title or main titles)
+.site-title,
+.title {
+  color: #C38D94;
+}
+
+// Headings h1-h6
+h1, h2, h3, h4, h5, h6 {
+  color: #B57D88;
+}
+
+hr {
+  border-color: #222233;
+}
+
+blockquote {
+  border-left-color: #AAA9EF;
+  color: #d0d0ff;
+  background-color: #1a1a2a;
+  padding-left: 1em;
+  font-style: italic;
+}
+
+code, pre {
+  background-color: #222233;
+  color: #EBEDFF;
+}
+
+.btn {
+  background-color: #AAA9EF;
+  color: #111118;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: darken(#AAA9EF, 15%);
+    color: #EBEDFF;
+  }
+}
