@@ -1,13 +1,74 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-// Override Minima variables BEFORE importing
+---
+# Only the front matter section above is required for Jekyll to process this file
+---
 
-$background-color: #000000;
-$text-color: #eeeeee;
-$link-base-color: #90caf9;
-$brand-color: #bb86fc;
+@import "minima"; // Import the default Minima styles
 
-@import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
+// Import Google Fonts (using @import in SCSS for simplicity)
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+// Variables override (optional)
+$font-family-base: 'Roboto', sans-serif !default;
+$background-color: #121212 !default;  // Dark background
+$text-color: #e0e0e0 !default;        // Light text color
+
+// Override Minima's colors for dark mode
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $font-family-base;
+}
+
+a {
+  color: #bb86fc;
+  &:hover,
+  &:focus {
+    color: #3700b3;
+  }
+}
+
+header, footer, .site-header, .site-footer {
+  background-color: #1f1f1f;
+  border-color: #333;
+  color: $text-color;
+}
+
+.nav-links a {
+  color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
+hr {
+  border-color: #444;
+}
+
+blockquote {
+  border-left-color: #bb86fc;
+  color: #ccc;
+  background-color: #222;
+  padding-left: 1em;
+  font-style: italic;
+}
+
+code, pre {
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  font-family: 'Roboto Mono', monospace;  // optional if you want monospaced code font
+}
+
+.btn {
+  background-color: #bb86fc;
+  color: #121212;
+  border: none;
+  &:hover,
+  &:focus {
+    background-color: #3700b3;
+    color: #fff;
+  }
+}
