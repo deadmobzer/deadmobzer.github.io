@@ -4,6 +4,8 @@
 // Override Minima variables BEFORE importing
 
 @import
-  "minima";
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
+
 @import
-  "minima/custom-styles";
+  "minima/skins/auto";
